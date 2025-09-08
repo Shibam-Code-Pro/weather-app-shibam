@@ -2,6 +2,10 @@
 
 A simple, beginner-friendly weather application that fetches current weather data from OpenWeatherMap API and displays it in a beautiful, responsive interface.
 
+## 🚀 Live Demo
+
+[View Live Weather APP](https://Shibam-Code-Pro.github.io/weather-app-shibam)
+
 ## ✨ Features
 
 - **City Search**: Enter any city name to get current weather information
@@ -109,3 +113,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Made with ❤️ for learning web development**
+
+---
+
+## 📞 Contact
+
+- **Email**: Connect-With-Shibam@outlook.com
+- **LinkedIn**: [linkedin.com/in/shibam-webdev](https://linkedin.com/in/shibam-webdev)
+- **GitHub**: [github.com/Shibam-Code-Pro](https://github.com/Shibam-Code-Pro)
+
+---
+
+⭐ If you found this project helpful, please give it a star on GitHub!
