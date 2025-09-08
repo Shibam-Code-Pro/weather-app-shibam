@@ -4,7 +4,7 @@ A simple, beginner-friendly weather application that fetches current weather dat
 
 ## 🚀 Live Demo
 
-[View Live Weather APP](https://Shibam-Code-Pro.github.io/weather-app-shibam)
+[View Live Weather APP](https://weather-app-shibam.netlify.app)
 
 ## ✨ Features
 
