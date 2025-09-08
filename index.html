@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - Get Current Weather</title>
+    
+    <!-- Link to our CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main container that holds everything -->
+    <div class="container">
+        
+        <!-- Header section with title -->
+        <header>
+            <h1>🌤️ Weather App</h1>
+            <p>Get current weather conditions for any city</p>
+        </header>
+
+        <!-- Search section where user types city name -->
+        <div class="search-container">
+            <form id="weather-form" class="search-form">
+                <div class="input-group">
+                    <!-- Input field where user types city name -->
+                    <input 
+                        type="text" 
+                        id="city-input" 
+                        placeholder="Enter city name..." 
+                        required
+                    >
+                    <!-- Search button -->
+                    <button type="submit" id="search-btn">
+                        <span class="btn-text">Search</span>
+                        <span class="loading-spinner" style="display: none;">⏳</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Error message area (hidden by default) -->
+        <div id="error-message" class="error-message" style="display: none;"></div>
+
+        <!-- Weather results area (hidden by default) -->
+        <div id="weather-result" class="weather-result" style="display: none;">
+            
+            <!-- City name and date -->
+            <div class="weather-header">
+                <h2 id="city-name"></h2>
+                <p id="current-date"></p>
+            </div>
+            
+            <!-- Main weather info: icon, temperature, description -->
+            <div class="weather-main">
+                <div class="temperature-section">
+                    <img id="weather-icon" src="" alt="Weather icon" class="weather-icon">
+                    <div class="temperature">
+                        <span id="temperature">--</span>
+                        <span class="unit">°C</span>
+                    </div>
+                </div>
+                <div class="weather-description">
+                    <p id="description"></p>
+                    <p id="feels-like"></p>
+                </div>
+            </div>
+
+            <!-- Detailed weather information -->
+            <div class="weather-details">
+                <div class="detail-item">
+                    <span class="detail-label">💧 Humidity</span>
+                    <span id="humidity" class="detail-value">--%</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">💨 Wind Speed</span>
+                    <span id="wind-speed" class="detail-value">-- m/s</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">🧭 Wind Direction</span>
+                    <span id="wind-direction" class="detail-value">--°</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">👁️ Visibility</span>
+                    <span id="visibility" class="detail-value">-- km</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">🌡️ Pressure</span>
+                    <span id="pressure" class="detail-value">-- hPa</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">☁️ Cloudiness</span>
+                    <span id="cloudiness" class="detail-value">--%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer with credit -->
+        <footer>
+            <p>Weather data provided by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></p>
+        </footer>
+    </div>
+
+    <!-- Link to our JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>

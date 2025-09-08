@@ -1,0 +1,341 @@
+/* ===== RESET - Remove default browser styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY - Main page styling ===== */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+    min-height: 100vh;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== MAIN CONTAINER - Centers everything on page ===== */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== HEADER - Title section ===== */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* ===== SEARCH SECTION - Where user types city name ===== */
+.search-container {
+    margin-bottom: 30px;
+}
+
+.search-form {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    display: flex;
+    gap: 12px;
+}
+
+/* Input field styling */
+#city-input {
+    flex: 1;
+    padding: 15px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* Input field when user clicks on it */
+#city-input:focus {
+    border-color: #74b9ff;
+    box-shadow: 0 0 0 3px rgba(116, 185, 255, 0.2);
+}
+
+/* Search button styling */
+#search-btn {
+    padding: 15px 25px;
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    min-width: 120px;
+}
+
+/* Search button when user hovers over it */
+#search-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(116, 185, 255, 0.4);
+}
+
+/* Search button when clicked */
+#search-btn:active {
+    transform: translateY(0);
+}
+
+/* Search button when disabled (during loading) */
+#search-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Loading spinner animation */
+.loading-spinner {
+    font-size: 1.2rem;
+    animation: spin 1s linear infinite;
+}
+
+/* Spin animation for loading */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* ===== ERROR MESSAGE - Shows when something goes wrong ===== */
+.error-message {
+    background: #ff7675;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* ===== WEATHER RESULTS - Shows weather information ===== */
+.weather-result {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    animation: fadeInUp 0.5s ease;
+    flex: 1;
+}
+
+/* Animation for weather results appearing */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* City name and date section */
+.weather-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.weather-header h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.weather-header p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Main weather info section (icon, temperature, description) */
+.weather-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+
+.temperature-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Weather icon styling */
+.weather-icon {
+    width: 80px;
+    height: 80px;
+}
+
+/* Temperature number styling */
+.temperature {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #333;
+}
+
+/* °C unit styling */
+.unit {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+/* Weather description section */
+.weather-description {
+    text-align: right;
+}
+
+.weather-description p:first-child {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.weather-description p:last-child {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Detailed weather information grid */
+.weather-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Individual detail items (humidity, wind, etc.) */
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid #74b9ff;
+}
+
+.detail-item:hover {
+    background: #e3f2fd;
+    transform: translateY(-2px);
+}
+
+.detail-label {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.detail-value {
+    font-weight: 600;
+    color: #333;
+}
+
+/* ===== FOOTER - Credit section ===== */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    opacity: 0.8;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ===== MOBILE RESPONSIVE - Makes app work on phones ===== */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    /* Stack input and button vertically on mobile */
+    .input-group {
+        flex-direction: column;
+    }
+    
+    #search-btn {
+        width: 100%;
+    }
+    
+    /* Stack weather info vertically on mobile */
+    .weather-main {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .weather-description {
+        text-align: center;
+    }
+    
+    .temperature {
+        font-size: 2.5rem;
+    }
+    
+    /* Single column for details on mobile */
+    .weather-details {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== VERY SMALL PHONES ===== */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .weather-result {
+        padding: 20px;
+    }
+    
+    .temperature-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .weather-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .temperature {
+        font-size: 2rem;
+    }
+}
