@@ -14,6 +14,10 @@ A simple, beginner-friendly weather application that fetches current weather dat
   <p><em>Weather App showing current conditions for Kolkata with detailed weather information</em></p>
 </div>
 
+## 🚀 Live Demo
+
+[View Live Weather App](https://weather-app-shibam.netlify.app/)
+
 ## ✨ Features
 
 - **City Search**: Enter any city name to get current weather information
