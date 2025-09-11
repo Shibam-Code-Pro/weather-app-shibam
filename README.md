@@ -1,6 +1,18 @@
 # 🌤️ Weather App
 
+![Weather App](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![OpenWeatherMap](https://img.shields.io/badge/OpenWeatherMap-0078D4?style=for-the-badge&logo=weather&logoColor=white)
+
 A simple, beginner-friendly weather application that fetches current weather data from OpenWeatherMap API and displays it in a beautiful, responsive interface.
+
+## 📸 Screenshots
+
+<div align="center">
+  <img src="screenshot/weather-app-shibam.png" alt="Weather App Screenshot" width="600">
+  <p><em>Weather App showing current conditions for Kolkata with detailed weather information</em></p>
+</div>
 
 ## ✨ Features
 
@@ -30,13 +42,25 @@ A simple, beginner-friendly weather application that fetches current weather dat
 
 ```
 weather-app-shibam/
-├── index.html          # Main HTML structure
-├── styles.css          # CSS styling and responsive design
-├── app.js             # JavaScript functionality and API integration
-├── README.md          # Project documentation
-├── LICENSE            # MIT License
-└── .gitignore         # Git ignore rules
+├── 📄 index.html          # Main HTML structure
+├── 🎨 styles.css          # CSS styling and responsive design
+├── ⚡ app.js              # JavaScript functionality and API integration
+├── 📸 screenshot/         # Project screenshots
+│   └── weather-app-shibam.png
+├── 📖 README.md          # Project documentation
+├── 📜 LICENSE            # MIT License
+└── 🚫 .gitignore         # Git ignore rules
 ```
+
+## 🛠️ Technologies Used
+
+<table>
+<tr>
+<td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="40" height="40"/><br><b>HTML5</b></td>
+<td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="40" height="40"/><br><b>CSS3</b></td>
+<td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40" height="40"/><br><b>JavaScript</b></td>
+</tr>
+</table>
 
 ## 📝 Commit History
 
