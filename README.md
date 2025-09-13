@@ -16,7 +16,7 @@ A simple, beginner-friendly weather application that fetches current weather dat
 
 ## 🚀 Live Demo
 
-[View Live Weather App](https://weather-app-shibam.netlify.app/)
+[View Live Weather App](https://weather-app-shibam.vercel.app)
 
 ## ✨ Features
 
